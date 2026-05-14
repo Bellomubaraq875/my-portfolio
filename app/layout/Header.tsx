@@ -6,6 +6,8 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Github, Linkedin } from "lucide-react";
 
+
+
 const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
