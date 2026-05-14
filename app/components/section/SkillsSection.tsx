@@ -1,10 +1,11 @@
-"use client";
+"use client"
 
 import React, { useState } from "react";
-import SkillBubble from "./SkillBubble";
+// import SkillBubble from "./SkillBubble";
+import SkillBubble from "../ui/SkillBubble";
 import {
     SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
-    SiJavascript, SiHtml5, SiCss3, SiRedux, SiPrisma,
+    SiJavascript, SiHtml5, SiCss, SiRedux, SiPrisma,
     SiGit, SiTestinglibrary, SiVercel, SiD3
 } from "react-icons/si";
 
@@ -16,7 +17,7 @@ const skills = [
     { name: "JavaScript", icon: <SiJavascript />, level: 95, years: 5, x: "80%", y: "25%", size: "110px", color: "#F7DF1E" },
     { name: "Tailwind", icon: <SiTailwindcss />, level: 98, years: 4, x: "10%", y: "65%", size: "105px", color: "#06B6D4" },
     { name: "Redux", icon: <SiRedux />, level: 85, years: 3, x: "30%", y: "15%", size: "90px", color: "#764ABC" },
-    { name: "CSS3", icon: <SiCss3 />, level: 95, years: 5, x: "55%", y: "15%", size: "85px", color: "#1572B6" },
+    { name: "CSS3", icon: <SiCss/>, level: 95, years: 5, x: "55%", y: "15%", size: "85px", color: "#1572B6" },
     { name: "HTML5", icon: <SiHtml5 />, level: 98, years: 5, x: "45%", y: "65%", size: "95px", color: "#E34F26" },
     { name: "Prisma", icon: <SiPrisma />, level: 80, years: 2, x: "85%", y: "60%", size: "90px", color: "#2D3748" },
     { name: "Git", icon: <SiGit />, level: 90, years: 4, x: "70%", y: "10%", size: "80px", color: "#F05032" },
