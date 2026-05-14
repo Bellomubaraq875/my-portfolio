@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDownRight, Globe, Zap, Terminal } from "lucide-react";
-import { MagneticButton } from "../../ui/MagneticButton";
+import { MagneticButton } from "../ui/MagneticButton";
 
 const HeroSection = () => {
     const [mouse, setMouse] = useState({ x: 0, y: 0 });
