@@ -164,7 +164,7 @@ const HeroSection = () => {
                                             <span className="text-white/20 mr-4 select-none">{(i + 1).toString().padStart(2, '0')}</span>
                                             <span className={`${line.includes('const') || line.includes('function') || line.includes('return') ? 'text-purple-400' :
                                                 line.includes(':') ? 'text-port-sky' :
-                                                    line.includes("'") ? 'text-green-400' : 'text-white/60'
+                                                    line.includes("'") ? 'text-green-400' : 'text-sky/70'
                                                 }`}>
                                                 {line}
                                             </span>
@@ -174,7 +174,7 @@ const HeroSection = () => {
                                     {codeSnippet.map((line, i) => (
                                         <div key={`dup-${i}`} className="whitespace-nowrap opacity-50">
                                             <span className="text-white/20 mr-4 select-none">{(i + 14).toString().padStart(2, '0')}</span>
-                                            <span className="text-white/60">{line}</span>
+                                            <span className="text-white/90">{line}</span>
                                         </div>
                                     ))}
                                 </motion.div>

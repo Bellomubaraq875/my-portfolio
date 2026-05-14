@@ -1,12 +1,12 @@
 "use client"
 
 import React, { useState } from "react";
-// import SkillBubble from "./SkillBubble";
+import { motion } from "framer-motion";
 import SkillBubble from "../ui/SkillBubble";
 import {
     SiReact, SiNextdotjs, SiTypescript, SiTailwindcss,
     SiJavascript, SiHtml5, SiCss, SiRedux, SiPrisma,
-    SiGit, SiTestinglibrary, SiVercel, SiD3
+    SiGit, SiTestinglibrary, SiVercel, SiD3, SiNodedotjs
 } from "react-icons/si";
 
 const skills = [
@@ -15,6 +15,7 @@ const skills = [
     { name: "Next.js", icon: <SiNextdotjs />, level: 92, years: 3, x: "65%", y: "45%", size: "130px", color: "#FFFFFF" },
     { name: "TypeScript", icon: <SiTypescript />, level: 88, years: 3, x: "20%", y: "40%", size: "120px", color: "#3178C6" },
     { name: "JavaScript", icon: <SiJavascript />, level: 95, years: 5, x: "80%", y: "25%", size: "110px", color: "#F7DF1E" },
+    { name: "Node.js", icon: <SiNodedotjs />, level: 82, years: 2, x: "78%", y: "50%", size: "100px", color: "#339933" },
     { name: "Tailwind", icon: <SiTailwindcss />, level: 98, years: 4, x: "10%", y: "65%", size: "105px", color: "#06B6D4" },
     { name: "Redux", icon: <SiRedux />, level: 85, years: 3, x: "30%", y: "15%", size: "90px", color: "#764ABC" },
     { name: "CSS3", icon: <SiCss/>, level: 95, years: 5, x: "55%", y: "15%", size: "85px", color: "#1572B6" },
@@ -69,9 +70,7 @@ const SkillsSection = () => {
             </div>
 
             {/* Section Indicator */}
-            <div className="mt-10 w-16 h-16 rounded-full border border-white/5 flex items-center justify-center text-white/10 text-[10px] font-black tracking-[0.5em] uppercase">
-                02
-            </div>
+            
         </section>
     );
 };

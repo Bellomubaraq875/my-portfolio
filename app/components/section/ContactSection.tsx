@@ -163,11 +163,6 @@ const ContactSection = () => {
                         </AnimatePresence>
                     </div>
                 </div>
-
-                {/* Section Indicator */}
-                <div className="mt-40 w-16 h-16 rounded-full border border-white/5 flex items-center justify-center text-white/5 text-[10px] font-black tracking-[0.5em] uppercase">
-                    06
-                </div>
             </div>
 
             <style jsx>{`
