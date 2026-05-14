@@ -5,6 +5,8 @@ import "./globals.css";
 // import Footer from "./components/layout/Footer";
 // import { Providers } from "../lib/providers";
 // import Header from "./layout/Header";
+import Header from "./components/layout/Header";
+
 
 /**
  * Configure Jost with specific weights used in your portfolio 
@@ -39,7 +41,7 @@ export default function RootLayout({
       <body className={`bg-[#050505] text-white font-sans antialiased selection:bg-port-sky/30`}>
       
         {/* <Providers> */}
-          {/* <Header /> */}
+          <Header />
           <main className="min-h-screen">
             {children}
           </main>
