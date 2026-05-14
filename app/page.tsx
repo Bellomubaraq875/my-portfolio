@@ -1,11 +1,11 @@
 
 // import Header from "./layout/Header";
-import HeroSection from "./section/Hero";
+import HeroSection from "./components/section/Hero";
 
 
 export default function Home() {
   return (
-    
-    <HeroSection/> 
+
+    <HeroSection />
   );
 }
