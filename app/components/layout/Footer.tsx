@@ -39,7 +39,7 @@ const Footer = () => {
                             Ready to bring your <br /> ideas to life?
                         </h2>
                         <div className="flex flex-wrap gap-4 text-white/40 text-[10px] uppercase font-bold tracking-[0.2em]">
-                            <span className="flex items-center gap-2"><MapPin size={12} className="text-port-sky" /> Ibadan, Nigeria</span>
+                            <span className="flex items-center gap-2"><MapPin size={12} className="text-sky-500" /> Ibadan, Nigeria</span>
                             <span>•</span>
                             <span>Available for Freelance</span>
                         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     <MagneticButton>
                         <a
                             href="#contact"
-                            className="group flex items-center gap-4 px-10 py-5 bg-white text-black font-black rounded-2xl hover:bg-port-sky hover:text-white transition-all duration-500 text-xs uppercase tracking-widest shadow-2xl shadow-white/5"
+                            className="group flex items-center gap-4 px-10 py-5 bg-white text-black font-black rounded-2xl hover:bg-sky-500 hover:text-white transition-all duration-500 text-xs uppercase tracking-widest shadow-2xl shadow-white/5"
                         >
                             Start a Project <ArrowUpRight size={20} className="group-hover:rotate-45 transition-transform duration-500" />
                         </a>
@@ -71,7 +71,7 @@ const Footer = () => {
                         <h4 className="text-white text-[10px] uppercase tracking-[0.4em] font-black opacity-30">Menu</h4>
                         <div className="flex flex-col gap-4 text-sm font-medium">
                             {["About", "Projects", "Experience", "Contact"].map((item) => (
-                                <a key={item} href={`#${item.toLowerCase()}`} className="text-white/50 hover:text-port-sky transition-colors w-fit">
+                                <a key={item} href={`#${item.toLowerCase()}`} className="text-white/50 hover:text-sky-500 transition-colors w-fit">
                                     {item}
                                 </a>
                             ))}
@@ -86,7 +86,7 @@ const Footer = () => {
                                 {
                                     icon: < SiGithub size={18} />, href: "https://github.com/Bellomubaraq875", color: "hover:bg-white hover:text-black" },
                                 { icon: < FaLinkedin size={18} />, href: "https://linkedin.com/in/mubarak-bello-213b8110b", color: "hover:bg-[#0077b5] hover:text-white" },
-                                { icon: < Mail size={18} />, href: "mailto:bellomubaraq875@gmail.com", color: "hover:bg-port-sky hover:text-white" }
+                                { icon: < Mail size={18} />, href: "mailto:bellomubaraq875@gmail.com", color: "hover:bg-sky-500 hover:text-white" }
                             ].map((social, i) => (
                                 <MagneticButton key={i}>
                                     <a

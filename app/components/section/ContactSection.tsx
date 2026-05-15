@@ -42,7 +42,7 @@ const ContactSection = () => {
                     <h2 className="text-4xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9]">
                         Let’s build <br /> something great.
                     </h2>
-                    <div className="mt-8 w-24 h-[1.5px] bg-gradient-to-r from-port-sky to-transparent" />
+                    <div className="mt-8 w-24 h-[1.5px] bg-gradient-to-r from-sky-500 to-transparent" />
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
@@ -54,8 +54,8 @@ const ContactSection = () => {
                         </p>
 
                         <div className="space-y-6">
-                            <a href="mailto:bellomubarak875@gmail.com" className="group flex items-center gap-5 text-white/50 hover:text-port-sky transition-all duration-300">
-                                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-port-sky/10 group-hover:border-port-sky/50 transition-all">
+                            <a href="mailto:bellomubarak875@gmail.com" className="group flex items-center gap-5 text-white/50 hover:text-sky-500 transition-all duration-300">
+                                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-sky-500/10 group-hover:border-sky-500/50 transition-all">
                                     <Mail size={20} />
                                 </div>
                                 <div className="flex flex-col">
@@ -64,8 +64,8 @@ const ContactSection = () => {
                                 </div>
                             </a>
 
-                            <a href="tel:+2348166440208" className="group flex items-center gap-5 text-white/50 hover:text-port-sky transition-all duration-300">
-                                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-port-sky/10 group-hover:border-port-sky/50 transition-all">
+                            <a href="tel:+2348166440208" className="group flex items-center gap-5 text-white/50 hover:text-sky-500 transition-all duration-300">
+                                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-sky-500/10 group-hover:border-sky-500/50 transition-all">
                                     <Phone size={20} />
                                 </div>
                                 <div className="flex flex-col">
@@ -96,7 +96,7 @@ const ContactSection = () => {
                                     </p>
                                     <button
                                         onClick={() => window.location.reload()}
-                                        className="mt-4 text-[10px] uppercase tracking-widest text-port-sky font-black hover:text-white transition-colors"
+                                        className="mt-4 text-[10px] uppercase tracking-widest text-sky-500 font-black hover:text-white transition-colors"
                                     >
                                         Send another?
                                     </button>

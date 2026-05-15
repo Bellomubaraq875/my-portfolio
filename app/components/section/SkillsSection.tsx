@@ -46,14 +46,14 @@ const SkillsSection = () => {
             <div className="relative z-20 flex flex-col items-center text-center mb-16 pointer-events-none">
                 <motion.span
                     initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
-                    className="text-port-sky text-[10px] font-bold uppercase tracking-[0.8em] mb-4"
+                    className="text-sky-500 text-[10px] font-bold uppercase tracking-[0.8em] mb-4"
                 >
                     Technical Arsenal /&gt;
                 </motion.span>
                 <h2 className="text-4xl md:text-7xl font-bold text-white tracking-tighter mb-6">
                     Skills & Stack
                 </h2>
-                <div className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-port-sky to-transparent" />
+                <div className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
             </div>
 
             {/* Dynamic Torch Light */}
