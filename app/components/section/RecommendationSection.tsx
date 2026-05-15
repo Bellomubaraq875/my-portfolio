@@ -13,7 +13,7 @@ const testimonials = [
         icon: <FileText size={20} />,
         preview: "Bello demonstrated a strong understanding of modern frontend technologies and played a key role in improving application stability and responsiveness.",
         full: `It is my pleasure to recommend Mr. Bello Mubaraq Adeyemi, who served as a Frontend Developer at Xerv Technologies from 27th June 2025 to 13th October 2025. During his time with us, Bello demonstrated a strong understanding of modern frontend technologies and contributed meaningfully to the refinement of our web interfaces.\n\nHe played a key role in diagnosing and fixing several frontend issues, improving the stability and responsiveness of our applications. Bello approaches every challenge with focus and determination, ensuring that each task is completed with precision and attention to detail.\n\nBeyond his technical contributions, Bello has shown professionalism, adaptability, and a positive attitude toward collaboration. Qualities that make him an asset to any engineering team.`,
-        color: "text-port-sky",
+        color: "text-sky-500",
         glow: "shadow-[0_0_30px_rgba(2,179,233,0.3)]",
     },
     {
@@ -73,7 +73,7 @@ const RecommendationSection = () => {
                 </svg>
 
                 {/* Nebula Glows */}
-                <div className="absolute top-[20%] left-[-10%] w-[60vw] h-[60vw] bg-port-sky/10 blur-[150px] rounded-full mix-blend-screen" />
+                <div className="absolute top-[20%] left-[-10%] w-[60vw] h-[60vw] bg-sky-500/10 blur-[150px] rounded-full mix-blend-screen" />
                 <div className="absolute bottom-[20%] right-[-10%] w-[60vw] h-[60vw] bg-purple-600/10 blur-[150px] rounded-full mix-blend-screen" />
             </div>
 
@@ -81,7 +81,7 @@ const RecommendationSection = () => {
 
                 {/* Header */}
                 <div className="text-center mb-20">
-                    <span className="text-port-sky text-[10px] tracking-[0.8em] uppercase font-black">Testimonials /&gt;</span>
+                    <span className="text-sky-500 text-[10px] tracking-[0.8em] uppercase font-black">Testimonials /&gt;</span>
                     <h2 className="text-4xl md:text-7xl font-bold text-white mt-4 tracking-tighter">Words of Trust</h2>
                 </div>
 
@@ -91,7 +91,7 @@ const RecommendationSection = () => {
                     {/* Left Arrow (Outside) */}
                     <button
                         onClick={() => setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
-                        className="hidden lg:flex absolute left-[-80px] w-14 h-14 rounded-full items-center justify-center bg-white/5 border border-white/10 text-white/20 hover:text-port-sky hover:border-port-sky/50 transition-all cursor-pointer z-20"
+                        className="hidden lg:flex absolute left-[-80px] w-14 h-14 rounded-full items-center justify-center bg-white/5 border border-white/10 text-white/20 hover:text-sky-500 hover:border-sky-500/50 transition-all cursor-pointer z-20"
                     >
                         <ChevronLeft size={24} />
                     </button>
@@ -126,7 +126,7 @@ const RecommendationSection = () => {
                                     </div>
                                     <button
                                         onClick={() => setSelected(testimonials[index])}
-                                        className="px-8 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-2xl hover:bg-port-sky hover:text-white transition-all duration-500 cursor-pointer shadow-xl shadow-white/5"
+                                        className="px-8 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-2xl hover:bg-sky-500 hover:text-white transition-all duration-500 cursor-pointer shadow-xl shadow-white/5"
                                     >
                                         View Full
                                     </button>
@@ -138,7 +138,7 @@ const RecommendationSection = () => {
                     {/* Right Arrow (Outside) */}
                     <button
                         onClick={() => setIndex((prev) => (prev + 1) % testimonials.length)}
-                        className="hidden lg:flex absolute right-[-80px] w-14 h-14 rounded-full items-center justify-center bg-white/5 border border-white/10 text-white/20 hover:text-port-sky hover:border-port-sky/50 transition-all cursor-pointer z-20"
+                        className="hidden lg:flex absolute right-[-80px] w-14 h-14 rounded-full items-center justify-center bg-white/5 border border-white/10 text-white/20 hover:text-sky-500 hover:border-sky-500/50 transition-all cursor-pointer z-20"
                     >
                         <ChevronRight size={24} />
                     </button>
@@ -150,7 +150,7 @@ const RecommendationSection = () => {
                         <div
                             key={i}
                             onClick={() => setIndex(i)}
-                            className={`h-1.5 transition-all duration-700 rounded-full cursor-pointer ${i === index ? "w-16 bg-port-sky" : "w-4 bg-white/10"
+                            className={`h-1.5 transition-all duration-700 rounded-full cursor-pointer ${i === index ? "w-16 bg-sky-500" : "w-4 bg-white/10"
                                 }`}
                         />
                     ))}

@@ -10,7 +10,7 @@ const AboutSection = () => {
     const cards = [
         {
             title: "Frontend Engineering",
-            icon: <Code2 className="w-5 h-5 text-port-sky" />,
+            icon: <Code2 className="w-5 h-5 text-sky-500" />,
             desc: "Building scalable frontend systems with React, Next.js, and TypeScript using reusable architectures, optimized rendering strategies, and maintainable component-driven development.",
         },
         {
@@ -25,7 +25,7 @@ const AboutSection = () => {
         },
         {
             title: "APIs, Performance & Tooling",
-            icon: <Cpu className="w-5 h-5 text-port-sky" />,
+            icon: <Cpu className="w-5 h-5 text-sky-500" />,
             desc: "Experienced in RESTful API integration, Node.js workflows, TypeScript ecosystems, debugging, and frontend performance optimization within agile engineering environments.",
         },
     ];
@@ -59,7 +59,7 @@ const AboutSection = () => {
                 <motion.span
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-port-sky text-[10px] tracking-[0.5em] uppercase mb-4 font-bold"
+                    className="text-sky-500 text-[10px] tracking-[0.5em] uppercase mb-4 font-bold"
                 >
                     Professional Profile /&gt;
                 </motion.span>
@@ -71,8 +71,8 @@ const AboutSection = () => {
                 <div className="flex flex-col md:flex-row gap-12 mb-32 items-center">
                     {/* Summary Card */}
                     <div className="md:w-1/2 p-8 md:p-12 rounded-3xl border border-white/5 bg-white/[0.01] backdrop-blur-xl">
-                        <div className="w-10 h-10 bg-port-sky/10 rounded-xl flex items-center justify-center mb-6">
-                            <Zap className="text-port-sky w-5 h-5 fill-current" />
+                        <div className="w-10 h-10 bg-sky-500/10 rounded-xl flex items-center justify-center mb-6">
+                            <Zap className="text-sky-500 w-5 h-5 fill-current" />
                         </div>
                         <p className="text-white/60 text-lg md:text-xl font-light leading-relaxed font-sans italic">
                             "I engineer scalable and high-performance web applications with React, Next.js, and TypeScript — combining clean architecture, modern UI systems, and product-focused development to create exceptional digital experiences."
@@ -80,7 +80,7 @@ const AboutSection = () => {
                     </div>
 
                     <div className="md:w-1/2 flex flex-col gap-6">
-                        <div className="h-[1px] w-12 bg-port-sky" />
+                        <div className="h-[1px] w-12 bg-sky-500" />
                         <p className="text-white/40 text-sm md:text-base leading-relaxed">
                             Experienced collaborating within remote agile teams to build scalable, maintainable, and customer-focused applications. Skilled in frontend architecture, API integration, state management, responsive systems, and performance optimization for production-grade web platforms.
                         </p>
@@ -105,11 +105,11 @@ const AboutSection = () => {
                                 <div className="absolute inset-0 bg-white/[0.02] rounded-3xl border border-white/5 opacity-0 group-hover:opacity-100 transition-all duration-500 -z-10" />
 
                                 <div className="flex items-start gap-6">
-                                    <div className="w-14 h-14 rounded-2xl border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-port-sky group-hover:bg-port-sky/5 flex-shrink-0">
+                                    <div className="w-14 h-14 rounded-2xl border border-white/10 flex items-center justify-center transition-all duration-500 group-hover:border-sky-500 group-hover:bg-sky-500/5 flex-shrink-0">
                                         {card.icon}
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-lg font-bold text-white uppercase tracking-widest group-hover:text-port-sky transition-colors">
+                                        <h3 className="text-lg font-bold text-white uppercase tracking-widest group-hover:text-sky-500 transition-colors">
                                             {card.title}
                                         </h3>
                                         <p className="text-white/40 font-light text-sm leading-relaxed leading-relaxed">

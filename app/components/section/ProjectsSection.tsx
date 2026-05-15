@@ -153,7 +153,7 @@ const ProjectsSection = () => {
 
             <div className="relative z-10 w-[95%] md:w-[90%] lg:w-[80%] max-w-[1200px] flex flex-col items-center">
 
-                <span className="text-port-sky text-[10px] tracking-[0.5em] uppercase mb-4 font-bold">
+                <span className="text-sky-500 text-[10px] tracking-[0.5em] uppercase mb-4 font-bold">
                     Portfolio /&gt;
                 </span>
 
@@ -190,7 +190,7 @@ const ProjectsSection = () => {
 
                                     {/* Content */}
                                     <div className="p-8 space-y-4 relative">
-                                        <span className="text-[9px] text-port-sky uppercase font-black tracking-widest">{project.type}</span>
+                                        <span className="text-[9px] text-sky-500 uppercase font-black tracking-widest">{project.type}</span>
                                         <h3 className="text-2xl font-bold text-white tracking-tight">{project.title}</h3>
                                         <p className="text-sm text-white/40 leading-relaxed line-clamp-2 font-sans">{project.desc}</p>
 
@@ -210,7 +210,7 @@ const ProjectsSection = () => {
                                                 <MagneticButton>
                                                     <a
                                                         href={project.live} target="_blank"
-                                                        className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-port-sky hover:border-port-sky/50 transition-all duration-300"
+                                                        className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-white/40 hover:text-sky-500 hover:border-sky-500/50 transition-all duration-300"
                                                     >
                                                         <ExternalLink size={18} />
                                                     </a>
@@ -238,7 +238,7 @@ const ProjectsSection = () => {
                                             {/* Case Study Trigger */}
                                             <button
                                                 onClick={() => setSelectedProject(project)}
-                                                className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white/20 hover:text-port-sky transition-colors cursor-pointer"
+                                                className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white/20 hover:text-sky-500 transition-colors cursor-pointer"
                                             >
                                                 <Info size={14} /> Details
                                             </button>
@@ -255,13 +255,13 @@ const ProjectsSection = () => {
                     onClick={() => setShowAll(!showAll)}
                     className="mt-20 group flex flex-col items-center gap-4 cursor-pointer"
                 >
-                    <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/20 group-hover:text-port-sky transition-colors">
+                    <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/20 group-hover:text-sky-500 transition-colors">
                         {showAll ? "Collapse" : "Explore More"}
                     </span>
                     <motion.div
                         animate={{ y: [0, 5, 0] }}
                         transition={{ repeat: Infinity, duration: 2 }}
-                        className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-port-sky group-hover:border-port-sky/50"
+                        className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-sky-500 group-hover:border-sky-500/50"
                     >
                         {showAll ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                     </motion.div>
@@ -285,7 +285,7 @@ const ProjectsSection = () => {
 
                                 <div className="mt-12 space-y-12">
                                     <div>
-                                        <span className="text-port-sky text-[10px] font-black uppercase tracking-[0.4em]">{selectedProject.type}</span>
+                                        <span className="text-sky-500 text-[10px] font-black uppercase tracking-[0.4em]">{selectedProject.type}</span>
                                         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mt-4 leading-none">{selectedProject.title}</h2>
                                     </div>
 
@@ -297,7 +297,7 @@ const ProjectsSection = () => {
                                     {/* Two-Column Details */}
                                     <div className="grid grid-cols-1 gap-10">
                                         <div className="space-y-4">
-                                            <div className="flex items-center gap-3 text-port-sky">
+                                            <div className="flex items-center gap-3 text-sky-500">
                                                 <Target size={16} />
                                                 <h4 className="text-[11px] font-black uppercase tracking-widest">The Challenge</h4>
                                             </div>

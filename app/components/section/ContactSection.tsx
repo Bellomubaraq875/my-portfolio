@@ -12,7 +12,7 @@ const ContactSection = () => {
     const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
     return (
-        <section
+        <section id="contact"
             onMouseMove={(e) => setMouse({ x: e.clientX, y: e.clientY })}
             className="relative py-32 px-6 bg-[#050505] flex flex-col items-center overflow-hidden"
         >
@@ -35,7 +35,7 @@ const ContactSection = () => {
                     <motion.span
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="text-port-sky text-[10px] tracking-[0.5em] uppercase mb-4 font-bold"
+                        className="text-sky-400 text-[10px] tracking-[0.5em] uppercase mb-4 font-bold"
                     >
                         Connect /&gt;
                     </motion.span>
@@ -141,7 +141,7 @@ const ContactSection = () => {
                                                 className={`group relative flex items-center gap-4 px-10 py-4 font-black rounded-2xl transition-all duration-500 text-[11px] uppercase tracking-[0.2em] shadow-2xl shadow-white/5 cursor-pointer
                                                     ${state.submitting
                                                         ? "bg-white/20 text-white/50 cursor-not-allowed"
-                                                        : "bg-white text-black hover:bg-port-sky hover:text-white"
+                                                        : "bg-white text-black hover:bg-sky-500 hover:text-white"
                                                     }`}
                                             >
                                                 {state.submitting ? (

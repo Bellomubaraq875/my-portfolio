@@ -12,7 +12,7 @@ const HeroSection = () => {
         "const engineer = {",
         '  name: "Mubarak Adeyemi",',
         '  role: "Senior Frontend Engineer",',
-        "  stack: ['React', 'Next.js', 'TypeScript', 'Node.js'],",
+        "  stack: ['React', 'Next.js', 'Node.js', 'TypeScript'],",
         "  experience: '5+ Years',",
         "  specialization: 'Scalable Frontend Systems',",
         "  architecture: 'Component-Driven Design',",
@@ -163,18 +163,20 @@ const HeroSection = () => {
                                         <div key={i} className="whitespace-nowrap">
                                             <span className="text-white/20 mr-4 select-none">{(i + 1).toString().padStart(2, '0')}</span>
                                             <span className={`${line.includes('const') || line.includes('function') || line.includes('return') ? 'text-purple-400' :
-                                                line.includes(':') ? 'text-port-sky' :
-                                                    line.includes("'") ? 'text-green-400' : 'text-sky/70'
+                                                line.includes(':') ? 'text-sky-600' : 
+                                                    'text-green-400'
                                                 }`}>
                                                 {line}
                                             </span>
                                         </div>
                                     ))}
+
                                     {/* Duplicate for seamless loop */}
                                     {codeSnippet.map((line, i) => (
                                         <div key={`dup-${i}`} className="whitespace-nowrap opacity-50">
                                             <span className="text-white/20 mr-4 select-none">{(i + 14).toString().padStart(2, '0')}</span>
-                                            <span className="text-white/90">{line}</span>
+                                            {/* Changed duplicate lines to green as well for consistency */}
+                                            <span className="text-white/400">{line}</span>
                                         </div>
                                     ))}
                                 </motion.div>

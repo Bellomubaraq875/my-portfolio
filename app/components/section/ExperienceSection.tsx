@@ -51,8 +51,8 @@ const ExperienceSection = () => {
             <div className="relative z-10 w-full max-w-[1200px] mx-auto">
                 {/* Header */}
                 <div className="text-center mb-24">
-                    <span className="text-port-sky text-[10px] tracking-[0.6em] uppercase font-black opacity-80 flex items-center justify-center gap-2">
-                        EXPERIENCE <span className="text-port-sky/50">/&gt;</span>
+                    <span className="text-sky-500 text-[10px] tracking-[0.6em] uppercase font-black opacity-80 flex items-center justify-center gap-2">
+                        EXPERIENCE <span className="text-sky-500/50">/&gt;</span>
                     </span>
                     <h2 className="text-5xl md:text-7xl font-bold text-white mt-4 tracking-tighter">
                         Work Journey
@@ -76,7 +76,7 @@ const ExperienceSection = () => {
                             >
                                 {/* Glowing Timeline Dot */}
                                 <div
-                                    className={`absolute left-[-6px] md:left-1/2 md:-translate-x-1/2 top-10 w-3 h-3 rounded-full bg-port-sky shadow-[0_0_15px_rgba(2,179,233,1)] z-10`}
+                                    className={`absolute left-[-6px] md:left-1/2 md:-translate-x-1/2 top-10 w-3 h-3 rounded-full bg-sky-500 shadow-[0_0_15px_rgba(2,179,233,1)] z-10`}
                                 />
 
                                 {/* Content Card */}
@@ -91,7 +91,7 @@ const ExperienceSection = () => {
                                         </h3>
 
                                         {/* Company */}
-                                        <div className="flex items-center gap-2 text-port-sky text-[11px] font-black uppercase tracking-widest mb-2">
+                                        <div className="flex items-center gap-2 text-sky-500 text-[11px] font-black uppercase tracking-widest mb-2">
                                             <Briefcase size={14} className="opacity-70" />
                                             {exp.company}
                                         </div>

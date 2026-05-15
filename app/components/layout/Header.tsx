@@ -4,10 +4,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, 
-    // Github, 
-    // Linkedin 
-} from "lucide-react";
+import { Menu, X, } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 
 
 
@@ -85,7 +84,7 @@ const Header = () => {
                                 {/* Active/Hover line indicator */}
                                 <motion.span
                                     layoutId="nav-underline"
-                                    className={`absolute -bottom-1 left-0 h-[1.5px] bg-port-sky transition-all duration-500 ${activeSection === item.href.substring(1) ? "w-full" : "w-0 group-hover:w-1/2"
+                                    className={`absolute -bottom-1 left-0 h-[1.5px] bg-sky-600 transition-all duration-500 ${activeSection === item.href.substring(1) ? "w-full" : "w-0 group-hover:w-1/2"
                                         }`}
                                 />
                             </Link>
@@ -103,7 +102,7 @@ const Header = () => {
                             rel="noopener noreferrer"
                             className="text-white/20 hover:text-port-sky transition-colors"
                         >
-                            {/* <Github size={16} /> */}
+                            <SiGithub size={16} />
                         </a>
                         <a
                             href="https://linkedin.com/in/mubarak-bello-213b8110b"
@@ -111,7 +110,7 @@ const Header = () => {
                             rel="noopener noreferrer"
                             className="text-white/20 hover:text-port-sky transition-colors"
                         >
-                            {/* <Linkedin size={16} /> */}
+                            <FaLinkedin size={16} />
                         </a>
                     </div>
 
@@ -162,8 +161,8 @@ const Header = () => {
                         ))}
                         <div className="h-[1px] w-12 bg-white/10 my-2" />
                         <div className="flex gap-8">
-                            {/* <a href="https://github.com/Bellomubaraq875" target="_blank" className="text-white/40 hover:text-port-sky"><Github size={20} /></a> */}
-                            {/* <a href="https://linkedin.com/in/mubarak-bello-213b8110b" target="_blank" className="text-white/40 hover:text-port-sky"><Linkedin size={20} /></a> */}
+                            <a href="https://github.com/Bellomubaraq875" target="_blank" className="text-white/40 hover:text-port-sky"><SiGithub size={20} /></a>
+                            <a href="https://linkedin.com/in/mubarak-bello-213b8110b" target="_blank" className="text-white/40 hover:text-port-sky"><FaLinkedin size={20} /></a>
                         </div>
                     </motion.div>
                 )}
