@@ -1,7 +1,5 @@
-
-
-import Footer from "./components/layout/Footer";
-import Header from "./components/layout/Header";
+// import Footer from "./components/layout/Footer";
+// import Header from "./components/layout/Header";
 import AboutSection from "./components/section/About";
 import ContactSection from "./components/section/ContactSection";
 import ExperienceSection from "./components/section/ExperienceSection";
@@ -15,7 +13,7 @@ import SkillsSection from "./components/section/SkillsSection"
 export default function Home() {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <HeroSection />
     <AboutSection/>
     <ProjectsSection />
@@ -23,7 +21,7 @@ export default function Home() {
     <RecommendationSection/>
     <SkillsSection/>
     <ContactSection/>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }
