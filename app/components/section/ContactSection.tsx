@@ -39,7 +39,7 @@ const ContactSection = () => {
                     >
                         Connect /&gt;
                     </motion.span>
-                    <h2 className="text-3xl md:text-6xl font-bold text-white tracking-tighter leading-[0.9]">
+                    <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-[0.9]">
                         Let’s build <br /> something great.
                     </h2>
                     <div className="mt-8 w-24 h-[1.5px] bg-gradient-to-r from-sky-500 to-transparent" />

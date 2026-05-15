@@ -2,10 +2,11 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { 
+import {
     // Github,
     // Linkedin,
-     Mail, ArrowUpRight, MapPin } from "lucide-react";
+    Mail, ArrowUpRight, MapPin
+} from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { MagneticButton } from "../ui/MagneticButton";
@@ -84,7 +85,8 @@ const Footer = () => {
                         <div className="flex gap-3">
                             {[
                                 {
-                                    icon: < SiGithub size={18} />, href: "https://github.com/Bellomubaraq875", color: "hover:bg-white hover:text-black" },
+                                    icon: < SiGithub size={18} />, href: "https://github.com/Bellomubaraq875", color: "hover:bg-white hover:text-black"
+                                },
                                 { icon: < FaLinkedin size={18} />, href: "https://linkedin.com/in/mubarak-bello-213b8110b", color: "hover:bg-[#0077b5] hover:text-white" },
                                 { icon: < Mail size={18} />, href: "mailto:bellomubaraq875@gmail.com", color: "hover:bg-sky-500 hover:text-white" }
                             ].map((social, i) => (
@@ -104,7 +106,7 @@ const Footer = () => {
 
                 {/* COPYRIGHT AREA */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-10 border-t border-white/5 text-[10px] uppercase tracking-widest font-bold text-white/20">
-                    <p>© {new Date().getFullYear()} BELLO MUBARACK ADEYEMI</p>
+                    <p>© {new Date().getFullYear()} BELLO MUBARAK ADEYEMI</p>
                     <div className="flex items-center gap-8">
                         <span className="hover:text-white transition-colors cursor-default">Next.js 14</span>
                         <span className="hover:text-white transition-colors cursor-default">Framer Motion</span>
