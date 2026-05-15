@@ -68,7 +68,7 @@ const HeroSection = () => {
 
                 {/* --- GALAXY NEBULAS --- */}
                 <div className="absolute top-[-10%] left-[-10%] w-[70vw] h-[70vw] bg-purple-900/20 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-port-sky/10 rounded-full blur-[140px] mix-blend-overlay" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-sky-500/10 rounded-full blur-[140px] mix-blend-overlay" />
 
                 {/* Dynamic Torch Light */}
                 <div
@@ -101,7 +101,7 @@ const HeroSection = () => {
                     <div className="space-y-4">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tighter leading-[0.85]">
                             Mubarak <br />
-                            <span className="text-port-sky italic">Adeyemi.</span>
+                            <span className="text-sky-500 italic">Adeyemi.</span>
                         </h1>
 
                         <p className="text-sm uppercase tracking-[0.35em] text-white/30 font-semibold">
@@ -117,7 +117,7 @@ const HeroSection = () => {
 
                     <div className="mt-12 flex flex-wrap gap-6">
                         <MagneticButton>
-                            <a href="#projects" className="group px-10 py-5 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-port-sky hover:text-white transition-all duration-500 flex items-center gap-3 shadow-2xl shadow-white/5">
+                            <a href="#projects" className="group px-10 py-5 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-sky-500 hover:text-white transition-all duration-500 flex items-center gap-3 shadow-2xl shadow-white/5">
                                 View Projects <ArrowDownRight size={18} className="group-hover:rotate-45 transition-transform duration-500" />
                             </a>
                         </MagneticButton>
@@ -140,7 +140,7 @@ const HeroSection = () => {
                     <div className="relative w-[300px] h-[380px] md:w-[420px] md:h-[520px] group">
 
                         {/* MAIN CARD - Scrollable Code Core */}
-                        <div className="absolute inset-0 rounded-[4rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl rotate-[-6deg] transition-all duration-700 group-hover:rotate-0 group-hover:border-port-sky/30 overflow-hidden shadow-2xl flex flex-col p-12">
+                        <div className="absolute inset-0 rounded-[4rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl rotate-[-6deg] transition-all duration-700 group-hover:rotate-0 group-hover:border-sky-500/30 overflow-hidden shadow-2xl flex flex-col p-12">
 
                             {/* Top Bar */}
                             <div className="flex justify-between items-center mb-10 opacity-40">
@@ -184,7 +184,7 @@ const HeroSection = () => {
 
                             {/* Bottom Corner Icons */}
                             <div className="absolute bottom-10 right-10 z-20 opacity-20 group-hover:opacity-50 transition-opacity">
-                                <Globe size={24} className="text-port-sky" />
+                                <Globe size={24} className="text-sky-500" />
                             </div>
                         </div>
 
@@ -204,7 +204,7 @@ const HeroSection = () => {
                                     <motion.div
                                         animate={{ x: ["-100%", "100%"] }}
                                         transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                                        className="h-full w-1/3 bg-port-sky/40"
+                                        className="h-full w-1/3 bg-sky-500/40"
                                     />
                                 </div>
                                 <div className="h-1.5 w-3/4 bg-white/5 rounded-full" />
@@ -212,11 +212,11 @@ const HeroSection = () => {
                             </div>
                             <div className="mt-auto flex justify-between items-end">
                                 <Terminal size={16} className="text-white/20" />
-                                <span className="text-[8px] font-mono text-port-sky/40">v14.2.0</span>
+                                <span className="text-[8px] font-mono text-sky-500/40">v14.2.0</span>
                             </div>
                         </motion.div>
 
-                        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-2/3 h-1/4 bg-port-sky/20 blur-[80px] rounded-full opacity-50" />
+                        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-2/3 h-1/4 bg-sky-500/20 blur-[80px] rounded-full opacity-50" />
                     </div>
                 </motion.div>
             </div>
@@ -229,7 +229,7 @@ const HeroSection = () => {
                 <motion.div
                     animate={{ height: [0, 60, 0], opacity: [0, 1, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="w-[1px] bg-gradient-to-b from-port-sky to-transparent"
+                    className="w-[1px] bg-gradient-to-b from-sky-500 to-transparent"
                 />
             </div>
         </section>

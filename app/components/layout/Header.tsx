@@ -57,7 +57,7 @@ const Header = () => {
             >
                 {/* LOGO SECTION */}
                 <Link href="#home" className="flex items-center gap-4 group">
-                    <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center group-hover:border-port-sky/50 transition-all duration-500">
+                    <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center group-hover:border-sky-500 transition-all duration-500">
                         <Image
                             src="/logo/logo.png"
                             alt="Mubarak Bello"
@@ -67,7 +67,7 @@ const Header = () => {
                     </div>
                     <div className="hidden sm:flex flex-col">
                         <span className="text-white text-[10px] font-black uppercase tracking-[0.2em] leading-none">Mubarak</span>
-                        <span className="text-port-sky text-[10px] font-black uppercase tracking-[0.2em] mt-1">Adeyemi</span>
+                        <span className="text-sky-500 text-[10px] font-black uppercase tracking-[0.2em] mt-1">Adeyemi</span>
                     </div>
                 </Link>
 
@@ -100,7 +100,7 @@ const Header = () => {
                             href="https://github.com/Bellomubaraq875"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white/20 hover:text-port-sky transition-colors"
+                            className="text-white/20 hover:text-sky-500 transition-colors"
                         >
                             <SiGithub size={16} />
                         </a>
@@ -108,7 +108,7 @@ const Header = () => {
                             href="https://linkedin.com/in/mubarak-bello-213b8110b"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white/20 hover:text-port-sky transition-colors"
+                            className="text-white/20 hover:text-sky-500 transition-colors"
                         >
                             <FaLinkedin size={16} />
                         </a>
@@ -118,7 +118,7 @@ const Header = () => {
                         href="#contact"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="hidden sm:block px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 text-white text-[10px] tracking-[0.3em] font-black uppercase hover:bg-port-sky hover:text-white hover:border-port-sky transition-all duration-500 cursor-pointer shadow-lg shadow-black/20"
+                        className="hidden sm:block px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 text-white text-[10px] tracking-[0.3em] font-black uppercase hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-500 cursor-pointer shadow-lg shadow-black/20"
                     >
                         Hire Me
                     </motion.a>
