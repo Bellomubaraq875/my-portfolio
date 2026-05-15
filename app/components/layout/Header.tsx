@@ -59,7 +59,7 @@ const Header = () => {
                 <Link href="#home" className="flex items-center gap-4 group">
                     <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center group-hover:border-sky-500 transition-all duration-500">
                         <Image
-                            src="/logo/logo.png"
+                            src="/images/nav.png"
                             alt="Mubarak Bello"
                             fill
                             className="object-contain p-1.5 opacity-80 group-hover:opacity-100 transition-opacity"

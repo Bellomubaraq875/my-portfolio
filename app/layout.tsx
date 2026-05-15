@@ -12,7 +12,7 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Mubaraq Bello | Portfolio",
+  title: "Mubaraq Bello",
   description: "Frontend Developer & UI Engineer Portfolio",
   icons: {
     icon: "/logo/favicon-1.png",
